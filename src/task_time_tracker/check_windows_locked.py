@@ -9,13 +9,13 @@ Check if a windows system is screen locked.
 
 import sys
 import time
-from ctypes import LoadLibrary
+from ctypes import cdll
 
 import psutil
 
 def lock_screen():
     """Lock the screen."""
-    lib = LoadLibrary("C:/Windows/System32/user32.dll")
+    lib = cdll.LoadLibrary("C:/Windows/System32/user32.dll")
     lib.LockWorkStation()
 
 def screen_locked():
