@@ -9,10 +9,14 @@ Check if a windows system is screen locked.
 
 import sys
 import time
-
+from ctypes import LoadLibrary
 
 import psutil
 
+def lock_screen():
+    """Lock the screen."""
+    lib = LoadLibrary("C:/Windows/System32/user32.dll")
+    lib.LockWorkStation()
 
 def screen_locked():
     """Check if screen locked."""
@@ -24,10 +28,13 @@ if __name__ == "__main__":
     print(
         "Test of",
         sys.argv[0],
-        "lock your screen & wait a couple of seconds",
+        "This will lock your screen, wait a couple of seconds",
         "before unlocking",
     )
-    for _ in range(10):
-        time.sleep(1)
+    for count in range(10):
         print(time.asctime(), "LOCKED" if screen_locked() else "OPEN")
+        time.sleep(1)
+        if count == 2:
+            lock_screen()
+        
     print("Done!")
