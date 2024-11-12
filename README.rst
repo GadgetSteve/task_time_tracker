@@ -18,6 +18,9 @@ Task Time Tracker
      :target: https://pyup.io/repos/github/GadgetSteve/task_time_tracker/
      :alt: Updates
 
+.. image:: https://github.com/GadgetSteve/task_time_tracker/blob/main/docs/images/fsf_sjb.png
+     :target: https://my.fsf.org/
+     :alt: FSF Member since November 2018
 
 
 Track the time spent on various tasks through the day.
