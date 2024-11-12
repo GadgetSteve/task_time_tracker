@@ -33,7 +33,13 @@ Track the time spent on various tasks through the day.
 Features
 --------
 
-* TODO
+* Lets you log your current activity by the minute from a dropdown liat of your current task. **TBD**
+* Lets you view your logged times, accumulated daily & weekly. **TBD**
+* Automatically archive past weeks.  **TBD**
+* Generate weekly, monthly & annual summaries (running for the current period). **TBD**
+* Automatically shows locked time off as such. **TBD**
+* Allow time for specially marked tasks to be logged when locked. **TBD**
+* _more to be added later!_ ...
 
 Credits
 -------
