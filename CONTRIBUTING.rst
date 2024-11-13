@@ -59,7 +59,7 @@ Get Started!
 
 Ready to contribute? Here's how to set up `task_time_tracker` for local development.
 
-1. Fork the `task_time_tracker` repo on GitHub.
+1. Fork the `task_time_tracker` repository on GitHub.
 2. Clone your fork locally::
 
     $ git clone git@github.com:your_name_here/task_time_tracker.git

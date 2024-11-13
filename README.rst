@@ -33,7 +33,7 @@ Track the time spent on various tasks through the day.
 Features
 --------
 
-* Lets you log your current activity by the minute from a dropdown liat of your current task. **TBD**
+* Lets you log your current activity by the minute from a drop-down list of your current task. **TBD**
 * Lets you view your logged times, accumulated daily & weekly. **TBD**
 * Automatically archive past weeks.  **TBD**
 * Generate weekly, monthly & annual summaries (running for the current period). **TBD**
