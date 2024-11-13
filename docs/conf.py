@@ -31,7 +31,15 @@ import task_time_tracker
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode']
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.viewcode",
+    "sphinxcontrib.spelling",
+]
+
+# Ignore the spelling of PyPi packages
+spelling_add_pypi_package_names = True
+spelling_show_suggestions = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
