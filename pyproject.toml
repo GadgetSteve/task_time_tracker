@@ -1,10 +1,11 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=64.0", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "task_time_tracker"
-version = "0.1.0"
+dynamic = ["version"]
+# version = "0.1.0"
 description = "Track the time spent on various tasks through the day."
 readme = "README.rst"
 authors = [
@@ -23,12 +24,19 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
+    "pre-commit",  # Apply pre-commit rules
     "coverage",  # testing
     "mypy",  # linting
     "pylint",  # linting
     "pytest",  # testing
     "ruff",  # linting
     "black", # formatting
+    "pyenchant", # spelling
+    "sphinx", # documentation
+    "sphinxcontrib-spelling", # spelling in rst
+    "wheel",  # Building wheels
+    "setuptools_scm".  # Versioning
+    "zipp>=3.20",  # Backport of pathlib-compatible object wrapper for zip files
 ]
 
 [project.urls]
@@ -43,6 +51,7 @@ package-dir = {"" = "src"}
 [tool.setuptools.package-data]
 "*" = ["*.*"]
 
+[tool.setuptools_scm]
 
 
 
