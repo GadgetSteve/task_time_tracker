@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=64.0", "setuptools-scm>=8"]
+requires = ["setuptools>=70.0", "setuptools-scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -24,18 +24,19 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = [
-    "pre-commit",  # Apply pre-commit rules
-    "coverage",  # testing
-    "mypy",  # linting
-    "pylint",  # linting
-    "pytest",  # testing
-    "ruff",  # linting
-    "black", # formatting
-    "pyenchant", # spelling
-    "sphinx", # documentation
-    "sphinxcontrib-spelling", # spelling in rst
-    "wheel",  # Building wheels
-    "setuptools_scm".  # Versioning
+    "pre-commit=>4.0.1",  # Apply pre-commit rules
+    "coverage>=7.6.4",  # testing
+    "mypy>=1.13.0",  # linting
+    "pylint>=3.3.1",  # linting
+    "pytest>=6.2.4",  # testing
+    "ruff>=0.3.5",  # linting
+    "black>=24.3", # formatting
+    "pyenchant>=3.2.2", # spelling
+    "Sphinx>=7.2.6", # documentation
+    "sphinxcontrib-spelling>=8.0.0", # spelling in rst
+    "urllib3>=2.2.2",  # Web Access
+    "requests=>2.32.3",  # Web Access
+    "wheel>=0.33.6",  # Building wheels
     "zipp>=3.20",  # Backport of pathlib-compatible object wrapper for zip files
 ]
 
