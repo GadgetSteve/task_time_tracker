@@ -13,14 +13,18 @@ from ctypes import cdll
 
 import psutil
 
+
 def lock_screen():
     """Lock the screen."""
     lib = cdll.LoadLibrary("C:/Windows/System32/user32.dll")
     lib.LockWorkStation()
 
+
 def screen_locked():
     """Check if screen locked."""
-    loc_proc_names = ["LogonUI.exe", ]  # Use a list in case of future changes
+    loc_proc_names = [
+        "LogonUI.exe",
+    ]  # Use a list in case of future changes
     return any(proc.name() in loc_proc_names for proc in psutil.process_iter())
 
 
@@ -36,5 +40,5 @@ if __name__ == "__main__":
         time.sleep(1)
         if count == 2:
             lock_screen()
-        
+
     print("Done!")

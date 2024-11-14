@@ -5,9 +5,6 @@
 import pytest
 
 
-from task_time_tracker import task_time_tracker
-
-
 @pytest.fixture
 def response():
     """Sample pytest fixture.
