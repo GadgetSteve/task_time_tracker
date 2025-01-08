@@ -13,10 +13,13 @@ Task Time Tracker
         :target: https://task-time-tracker.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
-
 .. image:: https://pyup.io/repos/github/GadgetSteve/task_time_tracker/shield.svg
      :target: https://pyup.io/repos/github/GadgetSteve/task_time_tracker/
      :alt: Updates
+
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
 
 .. image:: https://github.com/GadgetSteve/task_time_tracker/blob/main/docs/images/fsf_sjb.png
      :target: https://my.fsf.org/
