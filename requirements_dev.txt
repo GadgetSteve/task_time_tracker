@@ -17,5 +17,5 @@ setuptools_scm
 zipp>=3.20
 pytest>=6.2.4
 urllib3>=2.2.2
-requests=>2.32.3
+requests>=2.32.3
 coverage>=7.6.4

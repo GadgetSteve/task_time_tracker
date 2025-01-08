@@ -35,7 +35,7 @@ dev = [
     "Sphinx>=7.2.6", # documentation
     "sphinxcontrib-spelling>=8.0.0", # spelling in rst
     "urllib3>=2.2.2",  # Web Access
-    "requests=>2.32.3",  # Web Access
+    "requests>=2.32.3",  # Web Access
     "wheel>=0.33.6",  # Building wheels
     "zipp>=3.20",  # Backport of pathlib-compatible object wrapper for zip files
 ]
